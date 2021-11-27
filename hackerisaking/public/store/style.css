@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'DotMatrix-TwoExtended';
+    src: url('./src/fonts/DotMatrix-TwoExtended.ttf')  
+         format('truetype');
+}
+
+head, body {
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin-top: 100px;
+    /* padding-bottom: 200%; */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgb(24, 24, 24);
+    z-index: 10;
+}
+
+@keyframes bobing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes yeet {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-5000px);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.959);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 500px;
+    display: block;
+    /* padding: 50%; */
+    margin-left: calc(50% - 250px);
+    position: absolute;
+}
+
+.wrapper > .item {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.wrapper > .item > .new {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    font-size: 15pt;
+    font-weight: 600;
+    color: rgb(240, 117, 2);
+}
+
+.wrapper > .item > .title {
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 25px;
+    font-size: 25pt;
+    position: absolute;
+}
+
+.wrapper > .item > .slogan {
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 65px;
+    font-size: 16pt;
+    position: absolute;
+}
+
+.wrapper > .item > .buy-button {
+    width: 60px;
+    height: 40px;
+    margin-top: 120px;
+    border-radius: 20px;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    display: block;
+    border: none;
+    background: linear-gradient(to right, rgb(240, 157, 3), rgb(240, 58, 3));
+}
+
+.wrapper > .item > .info-link {
+    height: 40px;
+    margin-top: 180px;
+    color: rgb(223, 91, 3); 
+    position: absolute;
+    display: block;
+}
+
+.wrapper > .item > .info-link:hover {
+    text-decoration: underline;
+}
+
+.wrapper > .item > .image {
+    width: 300px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: 20px;
+    position: absolute;
+    display: block;
+}
+

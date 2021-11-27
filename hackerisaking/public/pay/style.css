@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'DotMatrix-TwoExtended';
+    src: url('./src/fonts/DotMatrix-TwoExtended.ttf')  
+         format('truetype');
+}
+
+head, body {
+    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin-top: 100px;
+    /* padding-bottom: 200%; */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgb(24, 24, 24);
+    z-index: 10;
+}
+
+@keyframes bobing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes yeet {
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-5000px);
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.959);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    font-weight: 600;
+    font-size: 12pt;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.form {
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 605px;
+    border-radius: 20px;
+    background-color: rgba(146, 146, 146, 0.041);
+    box-shadow: rgb(173, 173, 173) 2px 2px 4px 1px;
+}
+
+.form > .image {
+    width: 250px;
+    height: 180px;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    animation: 2s linear bobing infinite;
+}
+
+.form > .info {
+    display: block;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    padding-top: 2px;
+}
+
+.form > .info > .qty {
+    font-size: 10pt;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+
+.form > .info > .description {
+    font-size: 10pt;
+    font-weight: 600;
+    color: black;
+}
+
+.form > .inputs > .input-wrapper {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.form > .inputs > .input-wrapper > .label {
+    font-size: 12pt;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 37px;
+}
+
+.form > .inputs > .input-wrapper > .input {
+    font-size: 14pt;
+    width: 80%;
+    height: 20px;
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+
+.form > .checkout {
+    display: block;
+    text-align: center;
+    margin: auto;
+    outline: none;
+    font-size: 16pt;
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    /* border: 1px solid rgb(212, 212, 212); */
+    background: linear-gradient(to bottom, #f6f6f6, #e4e4e4);
+    box-shadow: 1px 3px 3px rgb(143, 143, 143);
+}

@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "name": "Bubble sort sorting algortyhm",
+            "folder": "bubble_sort",
+            "description": "Made with devNow.js"
+        },
+        {
+            "name": "Cool word clock",
+            "folder": "word_clock",
+            "description": "Inspired by QLOCKTWO clocks"
+        },
+        {
+            "name": "The iconic DVD logo",
+            "folder": "dvd_logo",
+            "description": "That one meme we all love. ;)"
+        },
+        {
+            "name": "Simple game creator test",
+            "folder": "game_creator",
+            "description": "This is a test of a physyics library called Matter.js"
+        }
+    ]
+}

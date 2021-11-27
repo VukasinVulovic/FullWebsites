@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="src/bin/css/page_style.css"/>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <title>cheat sheet</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="/"><i class="w3-large fa fa-home"></i></a>
+            <a href="https://github.com/VukasinW/">github <i class="glyphicon glyphicon-user"></i></a>
+            <a href="#" style="opacity: 0.6;">cheat sheet <i class="glyphicon glyphicon-file"></i></a>
+            <a href="/getting_started.html">getting started <i class="fa fa-code"></i></a>
+            <input class="search_bar" type="search" spellcheck="false"></input>
+            <button type="button" onclick="searchElement()" class="search_button"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="wrapper">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <h5>
+                            <b>HTML dom elements, divs</b>
+                        </h5>
+                    </td>
+                    <td>
+                        <h6>These are div elements, you can use for simple graphics or creating GUI.</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Square div</td>
+                    <td><code>squareDIV(id, size, x, y, z, hex-color);</code></td>
+                </tr>
+                <tr>
+                    <td>Rectangle div</td>
+                    <td><code>rectangleDIV(id, width, height, y, z, hex-color);</code></td>
+                </tr>
+                <tr>
+                    <td>Circle div</td>
+                    <td><code>circleDIV(id, radious, x, y, z, hex-color);</code></td>
+                </tr>
+                <tr>
+                    <td>Pill div</td>
+                    <td><code>pillDiv(id, width, height, roundness, x, y, z, hex-color);</code></td>
+                </tr>
+                <tr>
+                    <td>Div collision detection</td>
+                    <td><code title="collisionDetection(squareDIV('', 100, 100, 100, 1, '#00ff00'), squareDIV(), 0, true)">collisionDetection(element1, element2, offset, show borders of collision);</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>
+                            <b>HTML dom elements, inputs/outputs</b>
+                        </h5>
+                    </td>
+                    <td>
+                        <h6>Simple to use GUI elements.</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Button</td>
+                    <td><code>addButton(id, label, style, function);</code></td>
+                </tr>
+                <tr>
+                    <td>Image</td>
+                    <td><code>addImage(id, src, x, y, width, height, style, function);</code></td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td><code>addText(id, text, size, hex-color, x, y, align);</code></td>
+                </tr>
+                <tr>
+                    <td>Slider</td>
+                    <td><code title="''; setInterval(() => {document.body.style.backgroundColor = toRGB(addSlider('slider', 0, 255, 400, 10, 0, 0, 255));}, 10);">addSlider(id, min, max, width, height, x, y, start value);</code></td>
+                </tr>
+                <tr>
+                    <td>Sound effect</td>
+                    <td><code title="'Click on the page...'; window.onclick = () => {soundEffect('https://www.mfiles.co.uk/mp3-downloads/beethoven-symphony9-4-ode-to-joy-piano-solo.mp3');}">soundEffect(src);</code></td>
+                </tr>
+                <tr>
+                    <td>Video effect</td>
+                    <td><code title="'Click on the page...'; window.onclick = () => {videoEffect('https://r2---sn-c0q7lnse.googlevideo.com/videoplayback?expire=1584141884&ei=3MFrXp6dKriQ1Aac8Ib4Bw&ip=180.183.24.156&id=o-AL6vM57O4iGar4-dp-2v-fJxtKdVfRvkSGywIefTBFVQ&itag=18&source=youtube&requiressl=yes&vprv=1&mime=video%2Fmp4&gir=yes&clen=13798667&ratebypass=yes&dur=329.026&lmt=1392372563718864&fvip=2&fexp=23842630&c=WEB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=ADKhkGMwRQIgJ03ZvSI7R5dTfGlX70bhsM5ZLsWsyTsOWpvL9IeDu5ECIQDIWoH4EKM5IbhucjcpRHvHCI3xl7_eTTwx8_jAGsIhCQ%3D%3D&video_id=Hz1JWzyvv8A&title=Monty+Python-+Cheese+Shop&rm=sn-w5nuxa-iqte7l,sn-w5nuxa-c33ls7l,sn-30aey7l&req_id=ec831298e74a3ee&redirect_counter=3&cms_redirect=yes&ipbypass=yes&mh=bT&mip=178.221.67.252&mm=30&mn=sn-c0q7lnse&ms=nxu&mt=1584120205&mv=m&mvi=1&pl=17&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=ABSNjpQwRQIhAKGWs4oXHBfey-tkc33nIGD6Ki1zocv70THVSI4bUK7qAiAhSePmcwVf--bpdCqw0alurwoHzKeeBgJmypStWJuYzQ%3D%3D');}">videoEffect(src, width, height, x, y);</code></td>
+                </tr>
+                <tr>
+                    <td>Get html element</td>
+                    <td><code title="grab('body', 'html_element');">grab(value, method);</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>
+                            <b>Connections</b>
+                        </h5>
+                    </td>
+                    <td>
+                        <h6>Connect to a serer using these functions.</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>GET JSON from server</td>
+                    <td><code title="'Open the console using inspect element or F12...'; receive('https://www.reddit.com/r/ProgrammerHumor.json', (data) => {console.log('data', data.data.children[0].data.preview.images);});">receive(server adress, function with data);</code></td>
+                </tr>
+                <tr>
+                    <td>POST JSON to server</td>
+                    <td><code title="'Preview is unavailable, sorry. :`(';">transmit(server adress, data, function when done);</code></td>
+                </tr>
+                <tr>
+                    <td>Serial</td>
+                    <td><code>serial(mode, data or function, function, adress);</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>
+                            <b>Mathematical, string, array and complex functions</b>
+                        </h5>
+                    </td>
+                    <td>
+                        <h6>Very useful functions for all kinds of projects.</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Random number with min, max</td>
+                    <td><code>random(min, max);</code></td>
+                </tr>
+                <tr>
+                    <td>Trigger function if value changes</td>
+                    <td><code title="'Hold the right mouse button...';setInterval(() => { onChange(HOLD, () => {document.body.innerHTML += 'change<br>';}); }, 100);">onChange(value, function when changed, function when same);</code></td>
+                </tr>
+                <tr>
+                    <td>Map</td>
+                    <td><code>map(value, in min, in max, out min, out max);</code></td>
+                </tr>
+                <tr>
+                    <td>Average number</td>
+                    <td><code>average(array of numbers, real or rounded);</code></td>
+                </tr>
+                <tr>
+                    <td>Slice real numbers to size</td>
+                    <td><code title="toReal(10.5444, 2)">toReal(real number, size)</code></td>
+                </tr>
+                <tr>
+                    <td>Test a part of the code</td>
+                    <td><code title="''; test(() => {aler('Hello!');});">test(() => {});</code></td>
+                </tr>
+                <tr>
+                    <td>TTS with voice synthesys</td>
+                    <td><code title="'Click on the page...'; window.onclick = () => {speak('Is that a user that I see? Or a nother robot scrolling through the web?');}">speak(text, speed, voice);</code></td>
+                </tr>
+                <tr>
+                    <td>Voice recognition</td>
+                    <td><code title="'Click on the page...'; window.onclick = () => {recognize((data) => { alert(data); }); }">recognize((res) => {});</code></td>
+                </tr>
+                <tr>
+                    <td>Delay the whole code beyond this function</td>
+                    <td><code title="'normal code...'; delay(2000); document.body.innerHTML = 'done!';">delay(milliseconds);</code></td>
+                </tr>
+                <tr>
+                    <td>For loop with a delay</td>
+                    <td><code title="''; repeat(10, 1000, (i) => {document.body.innerHTML += i + '<br>'; });">repeat(times, delay in milliseconds, (i) => {});</code></td>
+                </tr>
+                <tr>
+                    <td>File downloader</td>
+                    <td><code title="'Click on the page...'; window.onclick = () => { download('Hello, i am plain text file. :)', 'text', 'sample_text');}">download(data, type, file name);</code></td>
+                </tr>
+                <tr>
+                    <td>Read text and json files</td>
+                    <td><code title="%/action.html?demo=read_file">readFile(file path, (data) => {});</code></td>
+                </tr>
+                <tr>
+                    <td>Get url paramaters</td>
+                    <td><code title="'Open the console using inspect element or F12...'; console.log(urlParamaters());">urlParamaters(url with paramaters);</code></td>
+                </tr>
+                <tr>
+                    <td>Cut string from char position</td>
+                    <td><code title="'Hello, Wolrd!'.cutByChar(',');">string.cutByChar(character);</code></td>
+                </tr>
+                <tr>
+                    <td>Create html element</td>
+                    <td><code title="'Input element...'; Element('input');">Element(type);</code></td>
+                </tr>
+                <tr>
+                    <td>Sorted random numbers/noise</td>
+                    <td><code title="createNoise(10, 0, 100).toString()">createNoise(resolution, min, max);</code></td>
+                </tr>
+                <tr>
+                    <td>Create a 2d array/matrix</td>
+                    <td><code title="'Open the console using inspect element or F12...'; console.table(create2dArray(10, 10));">create2dArray(slots x, slots y);</code></td>
+                </tr>
+                <tr>
+                    <td>Simple search algorythm</td>
+                    <td><code title="search('app', ['semicolon', 'apple', 'fruit'], true);">search(string input, array of items, highlight result);</code></td>
+                </tr>
+                <tr>
+                    <td>Random element from array</td>
+                    <td><code>random(array width elements);</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>
+                            <b>Default library values and functions</b>
+                        </h5>
+                    </td>
+                    <td>
+                        <h6>You can use these values and functions to make programming more easy.</h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Setup function</td>
+                    <td><code title="'This function runs once.';">function setup() {}</code></td>
+                </tr>
+                <tr>
+                    <td>Looping function</td>
+                    <td><code title="''; setInterval(() => {document.body.innerHTML += 'This function repeats.<br>';}, 100);">function loop() {}</code></td>
+                </tr>
+                <tr>
+                    <td>Stop the loop</td>
+                    <td><code title="'Click on the page to stop the loop...'; window.int = setInterval(() => {document.body.innerHTML += 'This function repeats.<br>'; }, 100); window.onclick = () => {clearInterval(window.int);}">stopLoop();</code></td>
+                </tr>
+                <tr>
+                    <td>Set loop speed</td>
+                    <td><code title="''; setInterval(() => {document.body.innerHTML += 'You can set speed of the loop with this function.<br>';}, 1000);">loopSpeed(milliseconds);</code></td>
+                </tr>
+                <tr>
+                    <td>Print value if changed</td>
+                    <td><code title="'Open the console using inspect element or F12...'; print('Hello, there!');">print('Hello, I am a log');</code></td>
+                </tr>
+                <tr>
+                    <td>Developer mode</td>
+                    <td><code>devMode();</code></td>
+                </tr>
+                <tr>
+                    <td>Default canvas element</td>
+                    <td><code title="CANVAS;">CANVAS</code></td>
+                </tr>
+                <tr>
+                    <td>Default canvas width</td>
+                    <td><code title="WIDTH;">WIDTH</code></td>
+                </tr>
+                <tr>
+                    <td>Default canvas height</td>
+                    <td><code title="HEIGHT;">HEIGHT</code></td>
+                </tr>
+                <tr>
+                    <td>Keyboard input ascii number</td>
+                    <td><code title="'Press a key...'; window.onkeydown = () => { alert(ASCII); }">ASCII</code></td>
+                </tr>
+                <tr>
+                    <td>Keyboard input text character</td>
+                    <td><code title="'Press a key...'; window.onkeydown = () => { alert(KEY); }">KEY</code></td>
+                </tr>
+                <tr>
+                    <td>Mouse wheel direction</td>
+                    <td><code title="'<br><br><br><br>Scroll...'; setInterval(() => {addText('wheel', WHEEL);}, 100);">WHEEL</code></td>
+                </tr>
+                <tr>
+                    <td>Is right mouse click held</td>
+                    <td><code title="'Hold the right mouse button...'; setInterval(() => {if(HOLD) { addText('click', 'held'); } else {addText('click', 'not held');}}, 10);">HOLD</code></td>
+                </tr>
+                <tr>
+                    <td>Is right mouse click, clicked</td>
+                    <td><code title="'Click on the page...'; setInterval(() => {if(CLICK) { addText('click', 'click'); } else {addText('click', 'not click');}}, 10);">CLICK</code></td>
+                </tr>
+                <tr>
+                    <td>Mouse cursor position at x</td>
+                    <td><code title="'Move you mouse left and right...'; onmousemove = () => { addText('id', pointerX); }"> pointerX</code></td>
+                </tr>
+                <tr>
+                    <td>Mouse cursor position at y</td>
+                    <td><code title="'Move you mouse up and down...'; onmousemove = () => { addText('id', pointerY); }">pointerY</code></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>
+                            <b>HTML5 Canvas</b>
+                        </h5>
+                        <td>
+                            <h6>The best way to make games and other graphical projects.</h6>
+                        </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Create the main canvas</td>
+                    <td><code>createCanvas(width, height, x, y, [r, g, b]);</code></td>
+                </tr>
+                <tr>
+                    <td>Erase all elements from canvas</td>
+                    <td><code title="%/action.html?demo=refresh">refresh();</code></td>
+                </tr>
+                <tr>
+                    <td>Draw a circle on canvas</td>
+                    <td><code title="%/action.html?demo=circle">circleEl(x, y, radius, rotation, [r, g, b]);</code></td>
+                </tr>
+                <tr>
+                    <td>Draw a rectangle on canvas</td>
+                    <td><code title="%/action.html?demo=rectangle">rectangleEl(x, y, width, height, rotation, [r, g, b]);</code></td>
+                </tr>
+                <tr>
+                    <td>Draw a line on canvas</td>
+                    <td><code title="%/action.html?demo=line">lineEl(array of start points, array of end points, thisckness, [r, g, b]);</code></td>
+                </tr>
+                <tr>
+                    <td>Draw an image on cavas from src</td>
+                    <td><code title="%/action.html?demo=image">imageEl(x, y, height, width, src);</code></td>
+                </tr>
+                <tr>
+                    <td>Canvas collision detection</td>
+                    <td><code title="%/action.html?demo=collision">collisionDetectionCanvas([x1, y1],  [x2, y2], [height1, width1], [height2, width2], offset);</code></td>
+                </tr>
+                <tr>
+                    <td>Get video from a webcam</td>
+                    <td><code title="%/action.html?demo=capture">capture(camera of mic);</code></td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="src/bin/lib/devNow_6.js"></script>
+        <script type="text/javascript" src="src/bin/js/compiler.js"></script>
+    </body>
+</html>

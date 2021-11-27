@@ -1,0 +1,150 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    -ms-overflow-style: none;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgba(158, 158, 158, 0.061);
+    padding: 0;
+}
+
+.topnav {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+}
+
+.topnav a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: rgba(129, 4, 4, 0.185);
+    filter: grayscale();
+    color: rgb(0, 0, 0);
+}
+
+.topnav a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.topnav a.active {
+    background-color: rgb(223, 156, 0);
+    color: white;
+}
+
+.logo {
+    margin-left: 10%;
+    margin-right: 10%;
+    filter: brightness(10);
+    opacity: 0.9;
+}
+
+.divs-select {
+    width: 20%;
+    height: 20%;
+    background-color: black;
+}
+
+.script_example {
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding-top: 1%;
+}
+
+.tags {
+    background-color: rgba(129, 128, 128, 0.089); 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.tutorial_gif {
+    width: 30%;
+    height: 30%;
+    opacity: 0.9;
+    padding-top: 2%;
+    margin: auto;
+    display: block;
+}
+
+.tutorial_gif_reflection {
+    width: 30%;
+    height: 30%;
+    opacity: 0.4;
+    filter: blur(1px);
+    transform: rotateX(180deg);
+    margin: auto;
+    display: block;
+}
+
+.search_bar {
+    float: right;
+    padding: 6px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 4px;
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+.search_bar:focus {
+    outline: none;
+}
+
+.search_button {
+    float: right;
+    padding: 6px;
+    background-color: rgb(65, 65, 65);
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 4px;
+    margin-right: 4px;
+    font-size: 20px;   
+}
+
+.search_button:focus {
+    outline: none;
+}
+
+.github {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.tile {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    padding-top: 3%;
+    display: inline-block;
+    width: 20%;
+    user-select: none;
+}
+  
+.tile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+.tile-text {
+    padding: 2px 16px;
+}
