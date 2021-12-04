@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title> Scroll </title>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <span class="navItem"> <a href="/"> <i class="fas fa-home"></i> </a> </span>
+            <span class="navItem"> <a href="/pizzaz"> Pizzas </a> </span>
+            <span class="navItem"> <a href="/sandwiches"> Sandwiches </a> </span>
+            <span class="navItem"> <a href="/drinks"> Drinks </a> </span>
+            <span class="navItem"> <a href="/cart"> <i class="fas fa-shopping-cart"></i> </a> </span>
+        </nav>
+    </header>
+    <main>
+        <ul class="cards">
+            <li class="card" id="margarita">
+                <img class="image" alt="Pizza Margarita" src="./assets/images/products/pizzas/margarita.jpg">
+                <div class="text">
+                    <h1 class="title"> Pizza Margarita </h1>
+                    <p class="info">
+                        It was this chef who invented a dish called "Pizza Margherita", to honour the Queen and the Kindgom of Italy.
+                    </p>
+                    <hr>
+                    <span class="price">
+                        4<sup>99</sup>RSD 
+                        <small> 30cm </small>
+                    </span>
+                    <button class="cartBtn"> Add To Cart <i class="fas fa-cart-plus"></i> </button>
+                    <a href="/pizzas/margarita" target="_blank" class="infoLink"> More info </a>
+                </div>
+            </li>
+
+            <li class="card" id="panini">
+                <img class="image" alt="Sandwich Panini" src="./assets/images/products/sandwiches/panini.jpg">
+                <div class="text">
+                    <h1 class="title"> Panini Sandwich </h1>
+                    <p class="info">
+                        A panini or panino is a sandwich made with Italian bread, usually served warmed by grilling or toasting. 
+                        <br>
+                        In many English-speaking countries, 
+                        <br>
+                        the name panini is given to a grilled sandwich made from any type of bread.
+                    </p>
+                    <hr>
+                    <span class="price">
+                        1<sup>99</sup>RSD 
+                        <small> per item </small>
+                    </span>
+                    <button class="cartBtn"> Add To Cart <i class="fas fa-cart-plus"></i> </button>
+                    <a href="/sandiches/panini" target="_blank" class="infoLink"> More info </a>
+                </div>
+            </li>
+
+            
+            <li class="card" id="chocolateFrappe">
+                <img class="image" alt="Chocolate Frappe" src="./assets/images/products/drinks/frappe_coffee.jpg">
+                <div class="text">
+                    <h1 class="title"> Chocolate Frappe </h1>
+                    <p class="info">
+                        A frappé coffee, Greek frappé, Nescafé frappé, or just frappé is a Greek iced coffee drink 
+                        <br>
+                        made from instant coffee, water, sugar, and milk.
+                    </p>
+                    <hr>
+                    <span class="price">
+                        3<sup>99</sup>RSD 
+                        <small> 400ml </small>
+                    </span>
+                    <button class="cartBtn"> Add To Cart <i class="fas fa-cart-plus"></i> </button>
+                    <a href="/drinks/choclate_frappe" class="infoLink"> More info </a>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <!-- <footer>
+        <span class="disclamer">
+            All images from <em> <a href="https://pixabay.com/"> pixabay.com </a> </em>.
+        </span>
+    </footer> -->
+</body>
+</html>
